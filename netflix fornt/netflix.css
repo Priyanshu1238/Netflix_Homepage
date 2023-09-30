@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: ' Bebas Neue';
+    box-sizing: border-box;
+}
+body{
+    background: #000;
+    color: #fff;
+
+}
+hr{
+    background-color: #777;
+    width:100%;
+    height: 5px;
+    fill: #777;
+    
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/header-image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8% ;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button{
+    border: 0;
+    outline: 0;
+    background:#db0001;
+    color: #fff;
+    padding: 11px 20px;
+    font-size: 17px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+
+}
+.sign{
+    margin-left: 10px;
+}
+.sign:hover{
+    transition: 0.2s ease-in;
+    background-color:#a10808 ;
+}
+#lang{
+    border: 0;
+    outline: 0;
+    display: inline;
+    align-items: center;
+    background:transparent;
+    font-size: 17px;
+    padding: 7px 10px;
+    color: #fff;
+
+    
+    /*color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left: 10px;
+    cursor: pointer;*/
+
+
+}
+.opt{
+    background:rgba(0,0,0,0.7);
+    color: #fff;
+    
+}
+.lang-btn{
+    display: inline;
+    align-items: center;
+    background:transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 1px 10px;
+    color: #fff;
+}
+
+.header-content{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    margin-top: 100px;
+   
+}
+.header-content h1{
+    font-size: 40px;
+    line-height: 70px;
+    font-weight: 600;
+    font-family: 'Arial';
+    
+    
+    
+    
+}
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.header-content p{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.email-signup input{
+    width: 60%;
+    border:0;
+    outline:0;
+    margin-left: 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 19px;
+    color: #fff;
+    margin-bottom: 5%;
+    
+
+}
+.email-signup input::placeholder{
+    font-size: 20px;
+}
+.email-signup button{
+    background:#db0001 ;
+    border:0;
+    outline: 0;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5%;
+    cursor: pointer;
+    padding: 19px 30px;
+    margin-right: 20px;
+    
+}
+.email-signup button:hover{
+    transition: 0.2s ease-in;
+    background-color:#a10808 ;
+}
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    width: 100%;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col1{
+    flex: 50%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.img-col1 img{
+    display: block;
+    width: 400px;
+    margin: auto;
+
+}
+.img-col1 video{
+    display: block;
+    width: 293px;
+    margin: auto;
+    position: absolute;
+    top: 62px;
+    left: 107px;
+
+}
+
+.img-col2{
+    flex: 50%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.img-col2 img{
+    display: block;
+    width: 400px;
+    margin: auto;
+
+}
+.img-col2 video{
+    display: block;
+    width: 293px;
+    margin: auto;
+    position: absolute;
+    top: 62px;
+    left: 107px;
+
+}
+
+.img-col3{
+    flex: 50%;
+    margin-bottom: 20px;
+    position: relative;
+}
+.img-col3 img{
+    
+    width: 500px;
+    position: relative;
+    z-index:5;
+
+}
+.img-col3 video{
+    
+    width: 295px;
+    position: absolute;
+    top: 37px;
+    left: 105px;
+
+}
+
+
+.img-col4{
+    flex: 50%;
+    margin-bottom: 20px;
+    position: relative;
+    
+}
+.img-col4 img{
+    display: block;
+    width: 400px;
+    margin: auto;
+
+}
+
+
+
+.features h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.faq{
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 20px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+
+}
+.accordion{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background:#303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height:0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.accordion input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked + label::after{
+    transform:rotate(135deg) ;
+}
+.footer{
+    padding: 50px 15% 10px;
+   
+
+}
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+.footer .col a{
+    display: block;
+    text-decoration: underline;
+    color: #b1baba;;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
+.cpy-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:#b1baba;
+}
+@media only screen and (max-width:600px){
+    .logo{
+        width:100px;
+
+    }
+    nav button{
+        padding: 5px 10px;
+
+    }
+    nav .lang-btn{
+        padding: 4px 8px;
+    }
+    .header-content{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .header-content h1{
+        font-size: 30px;
+    }
+    .email-signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+    .text-col, .img-col{
+        flex-basis: 100%;
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .row{
+        padding: 10px 0;
+
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordion .content{
+        font-size: 14px;
+    }
+    .accordion li label{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
